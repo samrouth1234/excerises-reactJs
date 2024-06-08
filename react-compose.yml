@@ -1,0 +1,11 @@
+version: '3'
+services:
+  reactjs_svc:
+    container_name: react-cont
+    build:
+      context: .
+      dockerfile: react-dockerfile  
+      # image: shinchanz/reactjs:1.1  docker build -t naemimage .
+    restart: always  
+    ports:
+      - 8084:80 
